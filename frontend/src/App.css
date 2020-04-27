@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* limpando algumas estilizações que vem como padrão */
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;  /* para o background ocupar a tela toda */
+  background: #000 url('./assets/main1.jpg') no-repeat;
+  background-size: cover;
+  -webkit-font-smoothing: antialiased !important; /* deixa a fonte mais detalhada*/
+}                   /* cor preta sob a imagem */
+
+body, input, button {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+.content {
+  margin: 100px auto 0;
+  float: none;
+  display: table;
+  background-color: #fff;
+  padding: 10px;
+  
+}
