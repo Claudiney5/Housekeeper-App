@@ -9,8 +9,9 @@
 }
 
 html {
-  min-height: 100%;  /* para o background ocupar a tela toda */
-  background: #000 url('./assets/main1.jpg') no-repeat;
+  min-height: 100%;  /* para o background ocupar a tela toda */  
+  background-color: #007eab; /* #0078a7*/
+  /*background: #007eab url('./assets/background1.png') no-repeat;*/
   background-size: cover;
   -webkit-font-smoothing: antialiased !important; /* deixa a fonte mais detalhada*/
 }                   /* cor preta sob a imagem */
@@ -29,14 +30,16 @@ body, input, button {
   border-color: #ddd solid 1px;
 }*/
 
+
 .container  {
-  margin: 100px auto 0;
+  margin: 120px 12em 0;
   max-width: 450px;
-  width: 100%;
+  width: 40%;
   display: flex;
-  flex-direction: column;
+
   align-items: center;
 }
+
 
 .content {
   width: 60%;
@@ -90,4 +93,17 @@ body, input, button {
 
 .content button.btn:hover {
   opacity: 0.9; 
+}
+
+
+.card {
+  margin: 10px;
+  width: 60%;
+}
+
+.card img {
+
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }

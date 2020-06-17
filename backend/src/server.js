@@ -1,6 +1,7 @@
 const express = require('express'); //importando dependências externas
 const mongoose = require('mongoose');
 const cors = require('cors');
+const path = require('path');
 
 const routes = require('./routes'); //importando arquivo
 
@@ -13,6 +14,7 @@ mongoose.connect('mongodb+srv://housekeeper01:housekeeper01@cluster0-4fxxw.mongo
 
 app.use(cors());  //ATENÇÃO: qualquer aplicação pode acesar a API! (ALTERAR!)
 app.use(express.json());
+app.use('/files', express.static(path.resolve(__dirname, '..', 'uploads')));
 app.use(routes);
 
 app.listen(3333);
