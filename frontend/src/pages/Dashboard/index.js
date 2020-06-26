@@ -22,16 +22,19 @@ export default function Dashboard() {
 
 	return (
 		<>
-      <ul className='service-list'>
-        {services.map(service => (
-        	  <li key={service._id}>
-        	    <header style={{ backgroundImage: `url(${service.thumbnail_url})`}} />
-        	    <strong>{service.task}</strong>
-        	    <span>{service.price}</span>
-
-        	  </li>
-        	))}
-      </ul>
+			<div className="container">    	
+				<div className="content"> 
+					<ul className='service-list'>
+						{services.map(service => (
+							<li className='list' key={service._id}>
+								<header style={{ backgroundImage: `url(${service.thumbnail_url})`}} />
+								<p><strong>{service.task}</strong></p>
+								<p><span>{service.price}</span></p>
+							</li>
+						))}
+					</ul>
+				</div>
+			</div>
 		</>
 	)
 }

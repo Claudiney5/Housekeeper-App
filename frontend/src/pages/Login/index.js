@@ -1,7 +1,9 @@
 import React, { useState }  from 'react';  
 import api from '../../services/api';
+import './style.css';
 
 import logo from '../../assets/logo.jpg';
+
 
 export default function Login({ history }) {
   const [email, setEmail ] = useState('');
@@ -19,21 +21,25 @@ export default function Login({ history }) {
   }
 
 	return (
-		<>   
-			<img src={logo} alt="Clean House" />
+		<> 
+			<div className="container">    	
+				<div className="content">  
+					<img src={logo} alt="Clean House" />
 
-	  		<p>Place your e-mail to access our services:</p>
+					<p>Place your e-mail to access our services:</p>
 
-	  		<form onSubmit={handSubmit}>	  	  
-		  	  	<input 
-			  	    type="email" required
-			  	    id="email" 
-			  	    placeholder="Your e-mail" 
-			  	    value={email}
-			  	    onChange={event => setEmail(event.target.value)}
-		  	  	/>
-				<button className="btn" type="submit">Enter</button>
-	  		</form>
+					<form onSubmit={handSubmit}>	  	  
+						<input 
+							type="email" required
+							id="email" 
+							placeholder="Your e-mail" 
+							value={email}
+							onChange={event => setEmail(event.target.value)}
+						/>
+						<button className="btn" type="submit">Enter</button>
+					</form>
+				</div>
+			</div>
 	    </>
   )
 }

@@ -8,14 +8,7 @@ import keeper from './assets/housekeeper2.png'
 function App() {
   return (
   	<>
-
-		<div className="container">    	
-			<div className="content">
-				<Routes />      	
-			</div>
-		</div>	
-
-	
+		<Routes />      	
     </>
   );
 }
