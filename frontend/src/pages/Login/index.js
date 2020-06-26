@@ -26,7 +26,7 @@ export default function Login({ history }) {
 
 	  		<form onSubmit={handSubmit}>	  	  
 		  	  	<input 
-			  	    type="email" 
+			  	    type="email" required
 			  	    id="email" 
 			  	    placeholder="Your e-mail" 
 			  	    value={email}
